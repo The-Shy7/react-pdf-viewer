@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+## Description
+
+This React application is a simple PDF viewer to view internal `.pdf` files (local files).
+
+Install [**@phuocng/react-pdf-viewer**](https://www.npmjs.com/package/@phuocng/react-pdf-viewer) and [**pdfjs-dist**](https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js) to the project.
+
+`yarn add @phuocng/react-pdf-viewer pdfjs-dist`
+
+Import Viewer, Worker, and CSS file from **@phuocng/react-pdf-viewer**. To load the `.pdf` file from an internal source (local file), import that `.pdf` file.
+
+```javascript
+import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+import filePDF from './example.pdf'
+```
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
